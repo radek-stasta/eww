@@ -1,7 +1,7 @@
 (include "widget_steam_panel/widget_steam_panel.yuck")
 
 (defwindow steam-panel
-  :monitor "eDP-1"
+  :monitor "0x0B38/0x00000003"
   :geometry (geometry
     :x "8px"
     :y "8px"

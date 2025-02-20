@@ -1,7 +1,7 @@
 (include "widget_system_monitor/widget_system_monitor.yuck")
 
 (defwindow system-monitor
-  :monitor "eDP-1"
+  :monitor "0x0B38/0x00000003"
   :geometry (geometry
     :x "8px"
     :y "8px"
