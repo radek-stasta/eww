@@ -1,0 +1,64 @@
+(include "widget_system_monitor/widget_system_monitor_graph.yuck")
+(include "widget_system_monitor/widget_system_monitor_progress.yuck")
+
+(defwidget system-monitor []
+  (box
+    :class "system-monitor-window-box"
+    (box
+      :class "system-monitor-main-box"
+      :orientation "v"
+      :space-evenly false
+      :spacing 8
+      (box
+        :space-evenly false
+        (label
+          :hexpand true
+          :xalign 0
+          :markup "System Monitor"
+        )
+        (button
+          :class "system-monitor-button"
+          :onclick "plasma-systemmonitor"
+          " Task Manager"
+        )
+      )
+      (box
+        :orientation "h"
+        :spacing 8
+        (system-monitor-graph
+          :text "Memory"
+          :value "${memory_used} GB"
+          :graph-value memory_used_percentage
+          :icon ""
+          :line-class "color-green"
+        )
+        (system-monitor-graph
+          :text "CPU"
+          :value "${cpu_used_percentage}%"
+          :graph-value cpu_used_percentage
+          :icon ""
+          :line-class "color-yellow"
+        )
+      )
+      (box
+        :orientation "h"
+        :spacing 8
+        (system-monitor-graph
+          :text "Network"
+          :value network_speed
+          :graph-value network_speed_bytes
+          :icon "󰛳"
+          :line-class "color-red"
+          :dynamic true
+        )
+        (system-monitor-progress
+          :text "Disk (free)"
+          :value "${disk_free} GB"
+          :progress-value disk_used_percentage
+          :icon ""
+          :line-class "color-purple"
+        )
+      )
+    )
+  )
+)

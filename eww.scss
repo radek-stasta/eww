@@ -1,0 +1,126 @@
+* {
+  all: unset;
+}
+
+.background-green {
+  background-color: #a3be8c;
+}
+.color-green {
+  color: #a3be8c;
+}
+.background-yellow {
+  background-color: #ebcb8b;
+}
+.color-yellow {
+  color: #ebcb8b;
+}
+.background-red {
+  background-color: #bf616a;
+}
+.color-red {
+  color: #bf616a;
+}
+.background-orange {
+  background-color: #d08770;
+}
+.background-purple {
+  background-color: #b48ead;
+}
+.color-purple {
+  color: #b48ead;
+}
+
+  /* SYSTEM MONITOR */
+.system-monitor-window-box {
+  background-color: #6c123e;
+  border-radius: 8px;
+  border: 1px solid #bf616a;
+}
+
+.system-monitor-main-box {
+  font-family: "Ubuntu Nerd Font", serif;
+  font-size: 20px;
+  color: #81a1c1;
+  margin: 16px;
+}
+
+.system-monitor-button {
+  font-size: 12px;
+  background-color: #401138;
+  border: 1px solid #bf616a;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 8px;
+}
+
+.system-monitor-button:hover {
+  background-color: #851244;
+}
+
+.system-monitor-graph-main-box, .system-monitor-progress-main-box {
+  font-family: "Ubuntu Nerd Font", serif;
+  color: #81a1c1;
+  background-color: #401138;
+  padding: 16px;
+  border: 1px solid #bf616a;
+  border-radius: 8px;
+}
+
+.system-monitor-graph-text, .system-monitor-progress-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.system-monitor-graph-value, .system-monitor-progress-value {
+  font-size: 20px;
+}
+
+.system-monitor-graph-icon, .system-monitor-progress-icon {
+  font-size: 32px;
+}
+
+.system-monitor-graph-graph-box {
+  margin-top: 8px;
+  border-top: 1px solid #3b4252;
+  border-bottom: 1px solid #3b4252;
+}
+
+.system-monitor-progress-progress-box {
+  margin-top: 8px;
+}
+
+/* STEAM PANEL */
+.steam-panel-window-box {
+  background-color: #0e0c24;
+  border-radius: 16px;
+  border: 1px solid #851244;
+}
+
+.steam-panel-main-box {
+  font-family: "Ubuntu Nerd Font", serif;
+  font-size: 20px;
+  color: #81a1c1;
+  margin: 16px;
+}
+
+.steam-panel-list-main-box {
+  font-family: "Ubuntu Nerd Font", serif;
+  font-size: 16px;
+  color: #81a1c1;
+  background-color: #1e0f2f;
+  padding: 16px;
+  border: 1px solid #851244;
+  border-radius: 8px;
+}
+
+.steam-panel-button {
+  font-size: 14px;
+  background-color: #1e0f2f;
+  border: 1px solid #851244;
+  border-radius: 8px;
+  padding: 4px 0 4px 0;
+}
+
+.steam-panel-button:hover {
+  background-color: #851244;
+}

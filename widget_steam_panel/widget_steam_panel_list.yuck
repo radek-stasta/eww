@@ -1,0 +1,14 @@
+(defwidget steam-panel-list [steam-display]
+  (box
+    :class "steam-panel-list-main-box"
+    :orientation "v"
+    :space-evenly false
+    (scroll
+      :height 580
+      :hscroll false
+      (literal
+        :content steam-display
+      )
+    )
+  )
+)

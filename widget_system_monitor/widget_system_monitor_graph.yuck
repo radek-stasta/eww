@@ -1,0 +1,44 @@
+(defwidget system-monitor-graph [text value graph-value icon line-class ?dynamic]
+  (box
+    :class "system-monitor-graph-main-box"
+    :orientation "v"
+    :space-evenly false
+    (box
+      :orientation "h"
+      :space-evenly false
+      (box
+        :orientation "v"
+        :hexpand true
+        (label
+          :class "system-monitor-graph-text"
+          :xalign 0
+          :markup text
+        )
+        (label
+          :class "system-monitor-graph-value"
+          :xalign 0
+          :markup value
+        )
+      )
+      (box
+        (label
+          :class "system-monitor-graph-icon"
+          :markup icon
+        )
+      )
+    )
+    (box
+      :class "system-monitor-graph-graph-box"
+      (graph
+        :class line-class
+        :width 150
+        :height 48
+        :value graph-value
+        :time-range "30s"
+        :thickness 2
+        :line-style "round"
+        :dynamic dynamic
+      )
+    )
+  )
+)

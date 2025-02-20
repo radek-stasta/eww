@@ -1,0 +1,42 @@
+(defwidget system-monitor-progress [text value progress-value icon line-class]
+  (box
+    :class "system-monitor-progress-main-box"
+    :orientation "v"
+    :space-evenly false
+    (box
+      :orientation "h"
+      :space-evenly false
+      (box
+        :orientation "v"
+        :hexpand true
+        (label
+          :class "system-monitor-progress-text"
+          :xalign 0
+          :markup text
+        )
+        (label
+          :class "system-monitor-progress-value"
+          :xalign 0
+          :markup value
+        )
+      )
+      (box
+        (label
+          :class "system-monitor-progress-icon"
+          :markup icon
+        )
+      )
+    )
+    (box
+      :class "system-monitor-progress-progress-box"
+      (circular-progress
+        :class line-class
+        :width 150
+        :height 48
+        :value progress-value
+        :start-at 75
+        :thickness 2
+      )
+    )
+  )
+)

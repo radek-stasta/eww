@@ -1,0 +1,56 @@
+(include "widget_steam_panel/widget_steam_panel_list.yuck")
+
+(defwidget steam-panel []
+  (box
+    :class "steam-panel-window-box"
+    (box
+      :class "steam-panel-main-box"
+      :orientation "v"
+      :space-evenly false
+      :spacing 8
+      (label
+        :markup "Steam Charts"
+      )
+      (box
+        :orientation: "h"
+        :spacing 16
+        (button
+          :class "steam-panel-button"
+          :onclick "eww update steam-selected=0"
+          "󰔵 Trending"
+        )
+        (button
+          :class "steam-panel-button"
+          :onclick "eww update steam-selected=1"
+          " Hot"
+        )
+        (button
+          :class "steam-panel-button"
+          :onclick "eww update steam-selected=2"
+          "% Popular"
+        )
+        (button
+          :class "steam-panel-button"
+          :onclick "eww update steam-selected=3"
+          "󰒭 Upcoming"
+        )
+      )
+      (stack
+        :selected steam-selected
+        :transition "crossfade"
+        (steam-panel-list
+          :steam-display steam_trending
+        )
+        (steam-panel-list
+          :steam-display steam_hot
+        )
+        (steam-panel-list
+          :steam-display steam_popular
+        )
+        (steam-panel-list
+          :steam-display steam_upcoming
+        )
+      )
+    )
+  )
+)

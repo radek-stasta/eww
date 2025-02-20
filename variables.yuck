@@ -1,0 +1,56 @@
+(defvar steam-selected 0)
+
+(defpoll memory_used
+  :interval "1s"
+  "sh ./scripts/memory_used.sh"
+)
+
+(defpoll memory_used_percentage
+  :interval "1s"
+  "sh ./scripts/memory_used_percentage.sh"
+)
+
+(defpoll cpu_used_percentage
+  :interval "1s"
+  "sh ./scripts/cpu_used_percentage.sh"
+)
+
+(defpoll disk_free
+  :interval "10s"
+  "sh ./scripts/disk_free.sh"
+)
+
+(defpoll disk_used_percentage
+  :interval "10s"
+  "sh ./scripts/disk_used_percentage.sh"
+)
+
+(defpoll network_speed
+  :interval "1s"
+  "sh ./scripts/network_speed.sh"
+)
+
+(defpoll network_speed_bytes
+  :interval "1s"
+  "sh ./scripts/network_speed_bytes.sh"
+)
+
+(defpoll steam_trending
+  :interval "1m"
+  "cat ~/.local/share/eww-output/steam_trending.yuck"
+)
+
+(defpoll steam_hot
+  :interval "1m"
+  "cat ~/.local/share/eww-output/steam_hot.yuck"
+)
+
+(defpoll steam_popular
+  :interval "1m"
+  "cat ~/.local/share/eww-output/steam_popular.yuck"
+)
+
+(defpoll steam_upcoming
+  :interval "1m"
+  "cat ~/.local/share/eww-output/steam_upcoming.yuck"
+)

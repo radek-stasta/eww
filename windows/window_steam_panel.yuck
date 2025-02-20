@@ -1,0 +1,13 @@
+(include "widget_steam_panel/widget_steam_panel.yuck")
+
+(defwindow steam-panel
+  :monitor "eDP-1"
+  :geometry (geometry
+    :x "8px"
+    :y "8px"
+    :anchor "top right"
+  )
+  :stacking "bottom"
+  :focusable "none"
+  (steam-panel)
+)

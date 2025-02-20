@@ -1,0 +1,13 @@
+(include "widget_system_monitor/widget_system_monitor.yuck")
+
+(defwindow system-monitor
+  :monitor "eDP-1"
+  :geometry (geometry
+    :x "8px"
+    :y "8px"
+    :anchor "top left"
+  )
+  :stacking "bottom"
+  :focusable "none"
+  (system-monitor)
+)
