@@ -32,37 +32,35 @@
 
   /* SYSTEM MONITOR */
 .system-monitor-window-box {
-  background-color: #6c123e;
+  background-color: #171717;
   border-radius: 8px;
-  border: 1px solid #bf616a;
+  border: 1px solid #e62648;
 }
 
 .system-monitor-main-box {
   font-family: "Ubuntu Nerd Font", serif;
   font-size: 20px;
-  color: #81a1c1;
   margin: 16px;
 }
 
 .system-monitor-button {
   font-size: 12px;
-  background-color: #401138;
-  border: 1px solid #bf616a;
+  background-color: #272727;
+  border: 1px solid #e62648;
   padding-left: 8px;
   padding-right: 8px;
   border-radius: 8px;
 }
 
 .system-monitor-button:hover {
-  background-color: #851244;
+  background-color: #e62648;
 }
 
 .system-monitor-graph-main-box, .system-monitor-progress-main-box {
   font-family: "Ubuntu Nerd Font", serif;
-  color: #81a1c1;
-  background-color: #401138;
+  background-color: #272727;
   padding: 16px;
-  border: 1px solid #bf616a;
+  border: 1px solid #e62648;
   border-radius: 8px;
 }
 
@@ -91,36 +89,35 @@
 
 /* STEAM PANEL */
 .steam-panel-window-box {
-  background-color: #0e0c24;
+  background-color: #171717;
   border-radius: 16px;
-  border: 1px solid #851244;
+  border: 1px solid #e62648;
 }
 
 .steam-panel-main-box {
   font-family: "Ubuntu Nerd Font", serif;
   font-size: 20px;
-  color: #81a1c1;
   margin: 16px;
 }
 
 .steam-panel-list-main-box {
   font-family: "Ubuntu Nerd Font", serif;
   font-size: 16px;
-  color: #81a1c1;
-  background-color: #1e0f2f;
+
+  background-color: #272727;
   padding: 16px;
-  border: 1px solid #851244;
+  border: 1px solid #e62648;
   border-radius: 8px;
 }
 
 .steam-panel-button {
   font-size: 14px;
-  background-color: #1e0f2f;
-  border: 1px solid #851244;
+  background-color: #272727;
+  border: 1px solid #e62648;
   border-radius: 8px;
   padding: 4px 0 4px 0;
 }
 
 .steam-panel-button:hover {
-  background-color: #851244;
+  background-color: #e62648;
 }
